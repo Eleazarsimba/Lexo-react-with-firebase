@@ -1,0 +1,1222 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+/* for large screen */
+@media only screen and (min-width: 690px) {
+  /* login form properties */
+  .loginform{
+    width: 400px;
+    padding: 20px;
+    /* margin-top: 50px; */
+    border: 1px solid rgb(124, 124, 133);
+    border-radius: 10px;
+  }
+  .loginform h5{
+    font-family: Impact;
+    font-size: 25px;
+  }
+  .loginform p{
+    font-size: 10px;
+  }
+  .theloginpage{
+    display: flex;
+    width: 50%;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+   
+  }
+  /* registration form properties */
+  .newuserform{
+    width: 450px;
+    padding: 20px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid rgb(124, 124, 133);
+    border-radius: 10px;
+  }
+
+  /* titlebar properties */
+  .titleandnav{
+    margin: 0;
+  }
+  .maintopbar{
+    height: 70px;
+    width: 100%;
+    background-color: #7DA7C9;
+    color: #ffffff;
+    display: flex;
+    z-index: 1;
+  }
+  .maintopbartittle{
+    font-size: 21px;
+    line-height: 70px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #537997;
+    width: 200px;
+  }
+  #titlename{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  /* logged account */
+  .maintopbarlog{
+    font-size: 15px;
+    line-height: 70px;
+    margin-left: auto;
+    /* width: 200px; */
+  }
+  /* menu icon properties */
+  .maintopbarmenu{
+    width: 30px;
+    height: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  .menuicon{
+    background-color: #ffffff;
+    width: 30px;
+    height: 4px;
+    margin: 5px 0;
+  }
+  /* caret options */
+  .thecaretbox{
+    width: 200px;
+    background-color: #808080;
+    color: #ffffff;
+    cursor: pointer;
+    z-index: 2;
+    position: relative;
+  }
+  .thecaretbox ul{
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    width: 200px;
+    padding-left: 0px;
+  }
+  .thecaretbox ul :Link{
+    text-decoration: none;
+    color: #ffffff;
+  }
+  .thecaretbox ul li{
+    list-style-type: none;
+    line-height: 50px;
+    border-bottom: 1px solid #ffffff;
+    padding-left: 20px;
+    font-size: 15px;
+    color: #ffffff;
+  }
+
+  /* main body properties */
+  .bodymain{
+    display: flex;
+    width: 98%;
+  }
+  /* navigation bar properties */
+  .sidebar{
+    background-color: #009999;
+    width: 200px;
+    min-height: 100vh;
+    margin: 0;
+    display: block;
+  }
+  .sidebar ul{
+    padding-left: 0px;
+    width: 200px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+  }
+  .sidebar ul li #thenavlink{
+    padding-left: 20px;
+    padding-right: 20px;
+    left: 0;
+    line-height: 40px;
+    list-style-type: none;
+    font-weight: bold;
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+  }
+    /* active tab */
+    .sidebar ul li .active{
+      width: 200px;
+      left: 0;
+      background-color: #59C68B;
+    }
+  .sidebar ul li :Link, #thenavlink{
+    text-decoration: none;
+    color: #ffffff;
+  }
+  .sidebar1{
+    cursor: pointer;
+    text-decoration: none;
+  }
+  /* the logged image */
+  .loggedimage img{
+    width: 150px;
+    height: 150px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+  }
+  .onlinetab{
+    display: flex;
+    margin: 5px;
+  }
+  .onlineemail{
+    color: #ffffff;
+    padding: 10px;
+    margin: 2px;
+  }
+  .onlineactive{
+    width: 10px;
+    height: 10px;
+    background-color: #00ff00;
+    margin: 5px;
+    border-radius: 5px;
+  }
+  #onlinetag{
+    color: #ffffff;
+  }
+  /* dashboard boxes info */
+  .shadowboxmainbody{
+    display: flex;
+    width: 100%;
+  }
+  /* image with aoverflow data */
+  .shadowbox {
+    /* position: relative; */
+    width: 30%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    margin-top: 5px;
+  }  
+  .myimage {
+    display: block;
+    width: 350px;
+    height: 300px;
+  }
+  .overlayevent {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #008CBA;
+    overflow: hidden;
+    width: 0;
+    height: 40px;
+    transition: .6s ease;
+  }
+  .shadowbox:hover .overlayevent {
+    width: 100%;
+    cursor: pointer;
+  }
+  
+  .eventtext {
+    color: white;
+    font-size: 14px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+  .maindashboard{
+    padding: 2px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;   
+  }
+  /* productdetail */
+  .productdetail{
+    padding-left: 40px;
+    background-color: #abcad4;
+    line-height: 30px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  /* our customers table */
+  #mytable1{
+    width: 100%;
+  }
+  #searcharea{
+    /* width: 30%; */
+    width: 200px;
+    float: right;
+    margin-left: auto;
+    margin-right: 0px;
+  }
+  /* reset link */
+  .resetlink p{
+    padding-top: 5px;
+    padding-left: 20px;
+  }
+  /* dashboardinfo */
+  .dashboardinfo{
+    padding: 5px;
+    width: 100%;
+  }
+  #shadowbox{
+    width: 48%;
+    height: 150px;
+    text-align: center;
+    /* max-width: 350px; */
+    border: 1px solid white;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    color: #ffffff;
+    background-color: #7DA7C9;
+  }
+  #shadowbox:Link{
+    text-decoration: none;
+  }
+  .newusersearch{
+    display: flex;
+  }
+  .newusericon{
+    padding-left: 10px;
+    display: flex;
+  }
+  #newusericontext{
+    display: none;
+  }
+  .newusericon:hover #newusericontext { 
+    display: block;
+  }
+
+  .mainmenu{    
+    padding-left: 10px;
+    min-height: 30px;
+    background-color: #ffffff;
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:100;
+  }
+  .carouselpage{
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    /* height: 50%; */
+  }
+  /* menu  */
+  .menu1 ul li { 
+    color: #1F2437;
+    font-weight: 600;
+    font-size: 14px;
+    width: 200px;
+    padding-top: 15px;
+    cursor: pointer;
+    text-align: center;
+  } 
+  .menu1 ul li:hover { 
+    color: #7DA7C9;
+    font-weight: 800;
+  } 
+  .menu1 ul{
+    list-style-type: none;
+    display: flex;
+  }
+  .menu1{
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    width: 100%;
+    /* float: right; */
+    margin: 5px;
+  }
+  #menuicon{
+    display: none;
+  }
+  .menu2{
+    display: none;
+  }
+  .menu2 ul{
+    display: none;
+  }
+  .menu2 ul li{
+    display: none;
+  }
+
+  #menuicon{
+    cursor: pointer;
+    float: right;
+    margin-right: 10px;
+    padding-top: 10px;
+  }
+  .empdash{
+    display: flex;
+  }
+  .level0{
+    width: 100%;
+    display: block;
+  }
+  .level1{
+    width: 70%;
+  }
+  /* #offerimages{
+    display: flex;
+  } */
+  .myofferimage {
+    display: grid;
+    width: 300px;
+    height: 300px;
+  }
+  #freeoffer{
+    display: flex;
+  }
+  .productsdisp{
+    display: flex;
+  }
+}
+
+
+/* for medium screen */
+@media only screen and (max-width: 690px) and (min-width: 480px) {
+  /* login form properties */
+  .loginform{
+    width: 400px;
+    padding: 20px;
+    margin-top: 50px;
+    border: 1px solid rgb(124, 124, 133);
+    border-radius: 10px;
+  }
+  .loginform h5{
+    font-family: Impact;
+    font-size: 25px;
+  }
+  .loginform p{
+    font-size: 10px;
+  }
+  .theloginpage{
+    width: 50%;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+   
+  }
+  #logwithimg{
+    display: none;
+  }
+  /* registration form properties */
+  .newuserform{
+    width: 350px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid rgb(124, 124, 133);
+    border-radius: 10px;
+  }
+
+  /* titlebar properties */
+  .titleandnav{
+    margin: 0;
+  }
+  .maintopbar{
+    height: 70px;
+    width: auto;
+    background-color: #7DA7C9;
+    color: #ffffff;
+    display: flex;
+    z-index: 1;
+  }
+  .maintopbartittle{
+    font-size: 21px;
+    line-height: 70px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #537997;
+    width: 150px;
+  }
+  #titlename{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  /* logged account */
+  .maintopbarlog{
+    font-size: 15px;
+    line-height: 70px;
+    margin-left: auto;
+    /* width: 200px; */
+  }
+  /* menu icon properties */
+  .maintopbarmenu{
+    width: 30px;
+    height: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  .menuicon{
+    background-color: #ffffff;
+    width: 30px;
+    height: 4px;
+    margin: 5px 0;
+  }
+  /* caret options */
+  .thecaretbox{
+    width: 200px;
+    background-color: #808080;
+    color: #ffffff;
+    cursor: pointer;
+    z-index: 2;
+    position: relative;
+  }
+  .thecaretbox ul{
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    width: 200px;
+    padding-left: 0px;
+  }
+  .thecaretbox ul :Link{
+    text-decoration: none;
+    color: #ffffff;
+  }
+  .thecaretbox ul li{
+    list-style-type: none;
+    line-height: 50px;
+    border-bottom: 1px solid #ffffff;
+    padding-left: 20px;
+    font-size: 15px;
+    color: #ffffff;
+  }
+
+  /* main body properties */
+  .bodymain{
+    display: flex;
+    width: 98%;
+  }
+  /* navigation bar properties */
+  .sidebar{
+    background-color: #009999;
+    width: 150px;
+    min-height: 100vh;
+    margin: 0;
+    display: none;
+  }
+  .sidebar ul{
+    padding-left: 0px;
+    width: 150px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+  }
+  .sidebar ul li #thenavlink{
+    padding-left: 20px;
+    padding-right: 20px;
+    left: 0;
+    line-height: 40px;
+    list-style-type: none;
+    font-weight: bold;
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+  }
+    /* active tab */
+    .sidebar ul li .active{
+      width: 200px;
+      left: 0;
+      background-color: #59C68B;
+    }
+  .sidebar ul li :Link, #thenavlink{
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  .sidebar1{
+    cursor: pointer;
+    text-decoration: none;
+  }
+  /* the logged image */
+  .loggedimage img{
+    width: 120px;
+    height: 120px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+  }
+  .onlinetab{
+    display: flex;
+    margin: 5px;
+  }
+  .onlineemail{
+    color: #ffffff;
+    padding: 10px;
+    margin: 2px;
+  }
+  .onlineactive{
+    width: 10px;
+    height: 10px;
+    background-color: #00ff00;
+    margin: 5px;
+    border-radius: 5px;
+  }
+  #onlinetag{
+    color: #ffffff;
+  }
+  /* dashboard boxes info */
+  .shadowboxmainbody{
+    display: flex;
+    width: 100%;
+  }
+   /* image with aoverflow data */
+   .shadowbox {
+    position: relative;
+    width: 30%;
+    height: 210px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    margin-top: 5px;
+  }  
+  .myofferimage {
+    display: grid;
+    width: 200px;
+    height: 210px;
+  }
+  
+  .overlayevent {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #008CBA;
+    overflow: hidden;
+    width: 0;
+    height: 40px;
+    transition: .6s ease;
+  }
+
+  .shadowbox:hover .overlayevent {
+    width: 100%;
+    cursor: pointer;
+  }
+  
+  .eventtext {
+    color: white;
+    font-size: 14px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+  .maindashboard{
+    padding: 2px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* productdetail */
+  .productdetail{
+    padding-left: 40px;
+    background-color: #abcad4;
+    line-height: 30px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  /* our customers table */
+  #mytable1{
+    width: 100%;
+  }
+  #searcharea{
+    /* width: 30%; */
+    width: 200px;
+    float: right;
+    margin-left: auto;
+    margin-right: 0px;
+  }
+  /* reset link */
+  .resetlink p{
+    padding-top: 5px;
+    padding-left: 20px;
+  }
+  /* dashboardinfo */
+  .dashboardinfo{
+    width: 100%;
+    padding: 5px;
+  }
+  #shadowbox{
+    width: 48%;
+    height: 150px;
+    border: 1px solid white;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    color: #ffffff;
+    background-color: #7DA7C9;
+  }
+  #shadowbox:Link{
+    text-decoration: none;
+  }
+  .newusersearch{
+    display: flex;
+  }
+  .newusericon{
+    padding-left: 10px;
+  }
+  #newusericontext{
+    display: none;
+  }
+  .newusericon:hover #newusericontext { 
+    display: block;
+  }
+
+  .mainmenu{
+    padding-left: 10px;
+    min-height: 30px;
+    background-color: #ffffff;
+    text-align: center;
+    position: fixed;
+    top:0;
+    width:100%;
+    z-index:100;
+  }
+  .carouselpage{
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    /* height: 50%; */
+  }
+  /* menu */
+  .menu1 ul li { 
+    display: none;
+  } 
+  .menu2{
+    width: 100%;
+    margin-top: 1px;
+  }
+  .menu2 ul{
+    background-color: #949cca;
+    list-style-type: none;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .menu2 ul li { 
+    display: block;
+    color: #ffffff;
+    padding-left: 10%;
+    padding: 15px;
+    cursor: pointer;
+  } 
+
+  #menuicon{
+    cursor: pointer;
+    text-align: center;
+  }
+  .empdash{
+    display: block;
+  }
+  /* #offerimages{
+    display: flex;
+  } */
+  #freeoffer{
+    display: block;
+  }
+  .productsdisp{
+    display: flex;
+  }
+}
+
+/* for small screen */
+@media only screen and (max-width: 480px) {
+   /* login form properties */
+   .loginform{
+    width: 400px;
+    padding: 20px;
+    margin-top: 50px;
+    border: 1px solid rgb(124, 124, 133);
+    border-radius: 10px;
+  }
+  .loginform h5{
+    font-family: Impact;
+    font-size: 25px;
+  }
+  .loginform p{
+    font-size: 10px;
+  }
+  #logwithimg{
+    display: none;
+  }
+  .theloginpage{
+    display: flex;
+    width: 50%;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+   
+  }
+
+  /* registration form properties */
+  .newuserform{
+    width: 350px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid rgb(124, 124, 133);
+    border-radius: 10px;
+  }
+
+  /* titlebar properties */
+  .titleandnav{
+    margin: 0;
+  }
+  .maintopbar{
+    height: 70px;
+    width: auto;
+    background-color: #7DA7C9;
+    color: #ffffff;
+    display: flex;
+    z-index: 1;
+  }
+  .maintopbartittle{
+    font-size: 21px;
+    line-height: 70px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #537997;
+    width: 150px;
+  }
+  #titlename{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  /* logged account */
+  .maintopbarlog{
+    font-size: 15px;
+    line-height: 70px;
+    margin-left: auto;
+    width: 200px;
+  }
+  /* menu icon properties */
+  .maintopbarmenu{
+    width: 30px;
+    height: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  .menuicon{
+    background-color: #ffffff;
+    width: 30px;
+    height: 4px;
+    margin: 5px 0;
+  }
+  /* caret options */
+  .thecaretbox{
+    width: 200px;
+    background-color: #808080;
+    color: #5c4b4b;
+    cursor: pointer;
+    z-index: 2;
+    position: relative;
+  }
+  .thecaretbox ul{
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    width: 200px;
+    padding-left: 0px;
+  }
+  .thecaretbox ul :Link{
+    text-decoration: none;
+    color: #ffffff;
+  }
+  .thecaretbox ul li{
+    list-style-type: none;
+    line-height: 50px;
+    border-bottom: 1px solid #ffffff;
+    padding-left: 20px;
+    font-size: 15px;
+    color: #ffffff;
+  }
+
+  /* main body properties */
+  .bodymain{
+    display: flex;
+    width: 98%;
+  }
+  /* navigation bar properties */
+  .sidebar{
+    background-color: #009999;
+    width: 150px;
+    min-height: 100vh;
+    margin: 0;
+    display: none;
+  }
+  .sidebar ul{
+    padding-left: 0px;
+    width: 150px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+  }
+  .sidebar ul li #thenavlink{
+    padding-left: 20px;
+    padding-right: 20px;
+    left: 0;
+    line-height: 40px;
+    list-style-type: none;
+    font-weight: bold;
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+  }
+    /* active tab */
+    .sidebar ul li .active{
+      width: 200px;
+      left: 0;
+      background-color: #59C68B;
+    }
+  .sidebar ul li :Link, #thenavlink{
+    text-decoration: none;
+    color: #ffffff;
+  }
+  .sidebar1{
+    cursor: pointer;
+    text-decoration: none;
+  }
+  /* the logged image */
+  .loggedimage img{
+    width: 120px;
+    height: 120px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+  }
+  .onlinetab{
+    display: flex;
+    margin: 5px;
+  }
+  .onlineemail{
+    color: #ffffff;
+    padding: 10px;
+    margin: 2px;
+  }
+  .onlineactive{
+    width: 10px;
+    height: 10px;
+    background-color: #00ff00;
+    margin: 5px;
+    border-radius: 5px;
+  }
+  #onlinetag{
+    color: #ffffff;
+  }
+    /* logged account */
+    .maintopbarlog{
+      font-size: 15px;
+      line-height: 70px;
+      margin-left: auto;
+      width: 50px;
+    }
+    #thecareticon1{
+      margin-left: auto;
+    }
+    #theuser1{
+      display: none;
+    }
+     /* dashboard boxes info */
+    .shadowboxmainbody{
+      display: block;
+      width: 100%;
+    }
+     /* image with aoverflow data */
+     .shadowbox {
+      position: relative;
+      width: 95%;
+      height: 200px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 40px;
+      margin-top: 5px;
+    }  
+    .myofferimage {
+      display: block;
+      width: 100%;
+      height: 200px;
+    }
+    
+    .overlayevent {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: #008CBA;
+      overflow: hidden;
+      width: 0;
+      height: 40px;
+      transition: .6s ease;
+    }
+    .shadowbox:hover .overlayevent {
+      width: 100%;
+      cursor: pointer;
+    }
+    
+    .eventtext {
+      color: white;
+      font-size: 14px;
+      position: absolute;
+      overflow: hidden;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+    }
+    .maindashboard{
+      padding: 2px;
+      width: 60%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    /* productdetail */
+    .productdetail{
+      padding-left: 40px;
+      background-color: #abcad4;
+      line-height: 30px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    /* our customers table */
+    #mytable1{
+      width: 100%;
+    }
+    #searcharea{
+      /* width: 30%; */
+      width: 200px;
+      float: right;
+      margin-left: auto;
+      margin-right: 0px;
+    }
+      /* reset link */
+    .resetlink p{
+      padding-top: 5px;
+      padding-left: 20px;
+    }
+    /* dashboardinfo */
+    .dashboardinfo{
+      width: 100%;
+      padding: 5px;
+    }
+    #shadowbox{
+      width: 150px;
+      border: 1px solid white;
+      height: auto;
+      font-size: 12px;
+      padding: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 30px;
+      color: #ffffff;
+      background-color: #7DA7C9;
+    }
+    #shadowbox:Link{
+      text-decoration: none;
+    }
+    .newusersearch{
+      display: flex;
+    }
+    .newusericon{
+      padding-left: 10px;
+    }
+    #newusericontext{
+      display: none;
+    }
+    .newusericon:hover #newusericontext { 
+      display: block;
+    }
+
+    .mainmenu{
+      padding-left: 10px;
+      min-height: 30px;
+      background-color: #ffffff;
+      text-align: center;
+      position: fixed;
+      top:0;
+      width:100%;
+      z-index:100;
+    }
+    .carouselpage{
+      width: 100%;
+      margin-right: auto;
+      margin-left: auto;
+      /* height: 50%; */
+    }
+    /* menu */
+    .menu1 ul li { 
+      display: none;
+    } 
+    .menu2{
+      width: 100%;
+      margin-top: 1px;
+    }
+    .menu2 ul{
+      background-color: #949cca;
+      list-style-type: none;
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .menu2 ul li { 
+      display: block;
+      color: #ffffff;
+      padding-left: 10%;
+      padding: 15px;
+      cursor: pointer;
+    }
+
+    #menuicon{
+      cursor: pointer;
+      text-align: center;
+    }
+    .empdash{
+      display: block;
+    }
+    /* #offerimages{
+      display: block;
+    } */
+    #freeoffer{
+      display: block;
+    }
+    .productsdisp{
+      display: block;
+    }
+}
+
+
+/* update profile */
+#editprofilehead{
+  padding: 20px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+}
+.updateinput {
+  width: 50%;
+  background-color: #fcfcfc;
+  border: 0;
+  border-bottom: 2px solid lightgrey;
+  padding: 1px;
+}
+.inputdara{
+  padding: 5px;
+}
+.msgactivity{
+  float: right;
+  display: flex;
+}
+#msgdata{
+  padding-left: 10px;
+}
+.messagetime{
+  margin-left: auto;
+  margin-right: 5px;
+  color: red;
+}
+
+
+.buttons-right>button {
+  float: right;
+  margin: 5px;
+}
+.app-container {
+  padding: 25px;
+}
+
+.percentage-number {
+  color: rgb(63, 81, 181);
+  font-size: 50px;
+  font-weight: bold;
+}
+.percentage-sign {
+  color: rgb(63, 81, 181);
+  font-size: 40px;
+}
+.percentage-container {
+  text-align: center;
+}
+.percentage-container:first-child {
+  padding-bottom: 3em;
+}
+
+/* footer and copyright */
+.myfooter1{
+  background-color: #ffffff;
+  padding: 20px;
+  margin-top: auto;
+  margin-bottom: auto;
+  background-color: #c9e1f1;
+}
+.myfooter1 p{ 
+  color: #000000;
+} 
+.platforms{
+  text-align: left;
+}
+.platcall{
+  display: flex;
+}
+.platcall h6{
+  padding-left: 20px;
+}
+.copyright{
+  text-align: center;
+}
+.copyright p{
+  color: #000000;
+  padding: 10px;
+}
+.logohere{
+  margin-top: 10px;
+  border-radius: 15px;
+}
+.totopicon{
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  cursor: pointer;
+}
+#subscribeemail{
+  width: 300px;
+}
+#socialplat{
+  margin: auto;
+  width: 10%;
+  cursor: pointer;
+}
+.abtus{
+  padding: 10px;
+}
+
+/* susb */
+#retak{
+  font-family: "Times New Roman", Times, serif;
+  padding: 40px;
+  font-size: 24px;
+}
+#loader1{
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
