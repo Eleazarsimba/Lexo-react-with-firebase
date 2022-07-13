@@ -37,8 +37,8 @@ To see the website, https://creative-blini-ab1266.netlify.app/
 <details>
   <summary><u>Access the website </u>(<i>click to expand</i>)</summary>
     <h4>Admin credentials</h4>
-    ```
+    <code>
       email: admin@gmail.com <br />
       pass: admin45
-    ```
+    </code>
 </details>
