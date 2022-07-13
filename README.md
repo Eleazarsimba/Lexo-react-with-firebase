@@ -1,6 +1,6 @@
 ### React website with firebase
 1. Set your firebase, and obtain the firebaseConfig values. <br />
-2. Replace the values in the firebase-config.js file with your values. <br />
+2. Replace these values in the firebase-config.js file with your values. <br />
 ```
   apiKey: "",
   authDomain: "",
