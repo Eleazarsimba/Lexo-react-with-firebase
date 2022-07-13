@@ -32,3 +32,5 @@ npm install
 ```
 npm start
 ```
+
+To see the website, https://creative-blini-ab1266.netlify.app/products
