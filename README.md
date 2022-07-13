@@ -36,8 +36,9 @@ npm start
 To see the website, https://creative-blini-ab1266.netlify.app/
 <details>
   <summary><u>Access the website </u>(<i>click to expand</i>)</summary>
-    <!-- have to be followed by an empty line! -->
-  <h4>Admin credentials</h4>
-  email: admin@gmail.com <br />
-  pass: admin45
+    <h4>Admin credentials</h4>
+    ```
+      email: admin@gmail.com <br />
+      pass: admin45
+    ```
 </details>
