@@ -35,5 +35,5 @@ npm start
 
 To see the website, https://creative-blini-ab1266.netlify.app/
 ##### Login
-admin@gmail.com
-admin45
+email: admin@gmail.com <br />
+pass: admin45
